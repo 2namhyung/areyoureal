@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Are You Real? Privacy Policy</title>
+    <style>
+      :root { --lime: #ddff66; --soft: #f4ffd2; --black: #10130e; }
+      body { max-width: 720px; margin: 42px auto; padding: 0 26px; color: var(--black); background: #fff; font: 15px/1.618 "Trebuchet MS", sans-serif; }
+      h1, h2 { font-family: Georgia, serif; } h1 { line-height: 1.18; } h2 { margin-top: 2.618em; font-size: 1.1rem; }
+      h1::before { content: "R?"; display: grid; width: 42px; height: 42px; margin-bottom: 26px; place-items: center; border: 1px solid var(--black); border-radius: 13px; background: var(--lime); font: 700 15px/1 Georgia, serif; }
+      code { padding: 2px 5px; background: var(--soft); border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <h1>Are you Real?<br />Privacy Policy</h1>
+    <p>Effective: August 15, 2026</p>
+
+    <h2>Purpose and scope</h2>
+    <p>The extension starts off. Only after you press the consent-and-estimate button does it request an estimated network country. Activation is blocked until that succeeds or you manually select a country.</p>
+
+    <h2>Storage, transfer, and sharing</h2>
+    <p>The automatic lookup sends HTTPS to <code>api.country.is</code>. The provider necessarily sees the request IP and returns it with a country code; the extension discards the returned IP and stores only the country code, time, and auto/manual source. Author IPs, browsing history, page content, and public-location text are neither stored nor transferred. A user-requested social account check caches only the platform, public handle, and normalized country result in browser-session storage for up to 24 hours. Instagram and Threads use one inactive temporary background tab and the platform's own DOM handlers; debugger permission is not used. Network traffic, cookies, and unrelated tabs are not inspected. The temporary lookup tab closes on completion, failure, or timeout. There are no ads, analytics, tracking, sales, or sharing.</p>
+
+    <h2>Settings stored on your device</h2>
+    <p><code>chrome.storage.local</code> stores enabled state, consent version, two-letter country code, timestamp, and <code>auto</code>/<code>manual</code> source. Turning the extension off deletes the country fields. Uninstalling removes all settings.</p>
+
+    <h2>Supported websites</h2>
+    <p>DCInside, Ruliweb, MLBPARK, 82cook, TodayHumor, X/Twitter, Instagram, and Threads (<code>threads.com</code> and <code>threads.net</code>). Every badge and account-check control is gated by the language of its own post or comment. X, Instagram, and Threads never infer an author IP; they use only explicit platform location or account-country UI.</p>
+
+    <h2>Limits of the result</h2>
+    <p>Network country is not nationality or residence. VPNs and proxies can change it. Language detection is an imperfect local script heuristic; unknown, short, mixed, no-country, and unsupported-country cases show no IP badge. Public location is unverified UI. Biography, caption, topic, and post free text are never treated as a location.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy questions, contact the publisher through the support contact listed on the Are You Real? Chrome Web Store item page.</p>
+  </body>
+</html>
